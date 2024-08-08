@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Weather Forecast
 
-## Getting Started
+### Problem
 
-First, run the development server:
+Create an app using the OpenWeatherAPI (https://openweathermap.org/api). The app should render pages that provide the 5 day weather forecast in 3 hour increments for any given zip code.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* Pages should render on the server, showing a 3 hour forecast for the next 5 days. There are a number of endpoints you could use for this, it's up to you how you want to achieve it.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* The structure of the pages should be '/weather/[zip]' where the zip code can be any US zip code. 
+For example if I visit /weather/90210 I should see the forecast information for the next 5 days for Beverly Hills
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+* You can use any frontend framework you like, such as React, NextJS, Vue, Qwik or any other that your are most comfortable with
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* If you can deploy the codebase to github and share a link, and ideally host the solution on Vercel or Netlify
 
-## Learn More
+* Design of the pages is up to you! This isn't a design challenge, but pages should be easy to understand and informative. A user landing on a random page should be able to understand what they're seeing.
 
-To learn more about Next.js, take a look at the following resources:
+## Solution
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The [solution](https://weather-forecast-three-iota.vercel.app/) is deployed using Vercel >>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The Beverly Hills example is available [here](https://weather-forecast-three-iota.vercel.app/weather/90210) >>
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Screenshot of Beverly Hills example](./src/assets/demo.png)

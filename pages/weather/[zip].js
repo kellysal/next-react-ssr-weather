@@ -42,10 +42,10 @@ export async function getServerSideProps({ query }) {
 
     const zip = query.zip
 
-    // const API_KEY = '37a0ff4eed513516d6c5587a56af0e72'
+    const API_KEY = '37a0ff4eed513516d6c5587a56af0e72'
 
     const res = await fetch(
-        `https://api.openweathermap.org/data/2.5/forecast?zip=${zip}&appid=37a0ff4eed513516d6c5587a56af0e72&units=imperial`
+        `https://api.openweathermap.org/data/2.5/forecast?zip=${zip}&appid=${API_KEY}&units=imperial`
     );
 
     const data = await res.json()

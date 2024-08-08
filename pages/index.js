@@ -8,12 +8,8 @@ export default function Home() {
         <title>React - Next - SSR - Vercel</title>
       </Head>
 
-      <div className="home">
-        <div className="container">
-          <Input placeholder="Search for a city..." />
+      <Input placeholder="Search Weather by Zip Code..." />
 
-        </div>
-      </div>
     </div>
   );
 }

@@ -20,7 +20,7 @@ export default function Input() {
                             <path stroke="currentColor" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                         </svg>
                     </div>
-                    <input onChange={(e) => { setRoute(e.target.value) }} type="text" name="route" className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500" placeholder="Search Weather by Zip Code..." required />
+                    <input onChange={(e) => { setRoute(e.target.value) }} type="text" name="route" minLength="5" maxLength="5" pattern="\d{5}" className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500" placeholder="Search Weather by Zip Code..." required />
                     <button type="submit" className="text-white absolute end-2.5 bottom-2.5 bg-gray-500 hover:bg-gray-800 font-medium rounded-lg text-sm px-4 py-2">Search</button>
                 </div>
             </form>
