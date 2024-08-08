@@ -1,11 +1,15 @@
 import React from "react";
 import '../styles/globals.css'
+import Input from "../components/Input";
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
 
   return (
-    <Component {...pageProps} />
+    <>
+      <Input placeholder="Search Weather by Zip Code..." />
+      <Component {...pageProps} />
+    </>
   );
 }
 
-export default MyApp;
+export default App;
